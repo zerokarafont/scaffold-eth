@@ -4,8 +4,9 @@ module.exports = {
   },
   extends: ["airbnb", "plugin:prettier/recommended"],
   plugins: ["babel"],
+  ignorePatterns: ["*.config.js"],
   rules: {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
     "import/extensions": [
       "error",
       "ignorePackages",
